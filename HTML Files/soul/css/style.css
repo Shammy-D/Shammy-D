@@ -1,12 +1,18 @@
-/*
-	Soul by TEMPLATE STOCK
-	templatestock.co @templatestock
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+
+/*body {
+  font-family: 'Source Sans Pro', sans-serif; /* add nunito as the  family, but didnt work last time, will try again later
+  color: black;
+}
+/* Let's try the google css class var here after
+Worked below, just removed the weight and left the rest, but changed the uniquifier to just body as it was previously.
+ 
 */
 
 body {
-  font-family: 'Source Sans Pro', sans-serif; /*<!-- add nunito as the  family, but didnt work last time, will try again later --> */
-  color: black;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
 }
 
 p {
@@ -38,10 +44,10 @@ p {
   padding: 0 0 11px 0;
 }
 .title p {
-  text-transform: uppercase;
+ /* text-transform: uppercase; */
   color: black;
   line-height: 20px;
-  font-size: 0.938em;
+  font-size: 0.999em;
   word-spacing: 3px;
   margin: 0;
   font-style: normal;
@@ -918,3 +924,9 @@ footer .copyright {
     max-height: 100% !important;
   }
 }
+/*
+	Soul by TEMPLATE STOCK
+	templatestock.co @templatestock
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+*/
+
