@@ -1,7 +1,14 @@
-I've got to fix the font's not being picked up. Probably will have to download the fonts again or properly/remove the api link.
+DONE ---- I've got to fix the font's not being picked up. Probably will have to download the fonts again or properly/remove the api link.
 
-Remove the mailto "my email" as chrome inpspect is showing it as an error/bad.
+DONE ---- Remove the mailto "my email" as chrome inpspect is showing it as an error/bad.
 
-Make the two email name and address fields autocomplete. So add an auto complete attribute to these.
+DONE ---- Make the two email name and address fields autocomplete. So add an auto complete attribute to these. in the form <!-- <form autocomplete="on">
 
 Fix the form to use smtp scripts to send an email to myself. Keila? phpmailer? Etc. 
+
+
+25-02-2024 11:40pm
+I've removed the mailto to stop the error.
+Renamed the css to style1.css and the ref to it as style1.css in the index file which fixed the fonts. The server side (on cloudflare) had cached the old style css.
+Added the autocomplete="on" to the form.
+
