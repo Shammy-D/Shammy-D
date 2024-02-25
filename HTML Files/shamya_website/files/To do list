@@ -6,6 +6,9 @@ DONE ---- Make the two email name and address fields autocomplete. So add an aut
 
 Fix the form to use smtp scripts to send an email to myself. Keila? phpmailer? Etc. 
 
+Need to match the index file on the server to github too. 
+
+Need to clean up the code and auto format it.
 
 25-02-2024 11:40pm
 I've removed the mailto to stop the error.
