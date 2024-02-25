@@ -1,0 +1,7 @@
+I've got to fix the font's not being picked up. Probably will have to download the fonts again or properly/remove the api link.
+
+Remove the mailto "my email" as chrome inpspect is showing it as an error/bad.
+
+Make the two email name and address fields autocomplete. So add an auto complete attribute to these.
+
+Fix the form to use smtp scripts to send an email to myself. Keila? phpmailer? Etc. 
