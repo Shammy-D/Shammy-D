@@ -10,6 +10,8 @@ DONE ---- Need to match the index file on the server to github too.
 
 DONE ---- Need to clean up the code and auto format it.
 
+Found some more i's to fix.
+
 25-02-2024 11:40pm
 I've removed the mailto to stop the error.
 Renamed the css to style1.css and the ref to it as style1.css in the index file which fixed the fonts. The server side (on cloudflare) had cached the old style css.
