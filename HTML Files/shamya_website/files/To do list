@@ -10,7 +10,37 @@ DONE ---- Need to match the index file on the server to github too.
 
 DONE ---- Need to clean up the code and auto format it.
 
-Found some more i's to fix.
+DONE ---- Found some more i's to fix.
+
+-Document does not have a meta description. Need to add this.
+
+-Fix my logo resolution: Serves images with low resolution
+
+- "Heading elements are not in a sequentially-descending order
+Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. Learn more about heading order.
+Failing Elements
+Operations
+<h3>
+PHILIP BURNARD - HOSTPLUS IT SERVICE DELIVERY MANAGER
+<h5>"
+
+-Form elements do not have associated labels, the comment section in the form doesn't have a label i think. 
+
+- <html> element does not have a [lang] attribute
+
+- Background and foreground colors do not have a sufficient contrast ratio. Might have to experiment with some colours.
+
+
+- 
+"[user-scalable="no"] is used in the <meta name="viewport"> element or the [maximum-scale] attribute is less than 5.
+Disabling zooming is problematic for users with low vision who rely on screen magnification to properly see the contents of a web page. Learn more about the viewport meta tag.
+Failing Elements
+head > meta
+<meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = devi…">"
+
+- Add Expires headers
+
+
 
 25-02-2024 11:40pm
 I've removed the mailto to stop the error.
