@@ -6,12 +6,18 @@ DONE ---- Make the two email name and address fields autocomplete. So add an aut
 
 Fix the form to use smtp scripts to send an email to myself. Keila? phpmailer? Etc. 
 
-Need to match the index file on the server to github too. 
+DONE ---- Need to match the index file on the server to github too. 
 
-Need to clean up the code and auto format it.
+DONE ---- Need to clean up the code and auto format it.
 
 25-02-2024 11:40pm
 I've removed the mailto to stop the error.
 Renamed the css to style1.css and the ref to it as style1.css in the index file which fixed the fonts. The server side (on cloudflare) had cached the old style css.
 Added the autocomplete="on" to the form.
 
+26-02-2024 8:43pm
+Unified the repo code and the server code. 
+Fixed the auto complete on both inputs.
+Fixed all the I's (were lowercase cause old tradition from using iv vi stuff apparently) lol.
+Fixed a typo 'physical'.
+Auto formatted the code, shift + alt + f and got rid of comments that were redundant.
