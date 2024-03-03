@@ -71,6 +71,8 @@
 
     <!-- General Initialization -->
     <script src="js/general.js" type="text/javascript"> </script>
+<!-- Adding a openai script CDN so i can later on add a chatbot perhaps-->
+    <script src="https://unpkg.com/openai"></script>
 
 </head>
 
@@ -543,29 +545,39 @@
                             <span>...</span>
                         </div>
                     </div>
+                    <div> 
+                        <div id="chat-container">
+                            <div id="chat-display"></div>
+                            <input type="text" id="user-input" placeholder="Type a message...">
+                            <button onclick="sendMessage()">Send</button>
+                        </div>
+                        
+                    </div>
+<!-- 
 
-                    <form autocomplete="on"> <!-- just form here, but adding an action temporarily-->
+                    <form autocomplete="on"> <!- just form here, but adding an action temporarily--
                         <div class="large-6 column">
                             <input type="text" name="name" title="Under Construction" class="defaultText"
-                                autocomplete="on" /> <!-- title = Name-->
+                                autocomplete="on" /> <!- title = Name--
                         </div>
 
                         <div class="large-6 column">
                             <input type="text" name="name" title="Under Works " class="defaultText" autocomplete="on" />
-                            <!-- title = Email-->
+                            <!- title = Email--
                         </div>
 
-                        <div class="large-12 column"> <!-- he box once complete will have: WHAT'S ON YOUR MIND-->
-                            <!-- I'll add the python script later as it'll take time to fine tune it and get it working properly. Plus i can get everything troubleshooted and working, then snapshot/backup the nginxpure vm so that if i screw with python sccript too much it doesn't fuck up anything else by accident, you know, weird settings forwards etc etc. SD-->
+                        <div class="large-12 column"> <!- he box once complete will have: WHAT'S ON YOUR MIND--
+                            <!- I'll add the python script later as it'll take time to fine tune it and get it working properly. Plus i can get everything troubleshooted and working, then snapshot/backup the nginxpure vm so that if i screw with python sccript too much it doesn't fuck up anything else by accident, you know, weird settings forwards etc etc. SD--
                             <textarea
                                 id="comments">CURRENTLY UNDER WORKS, i'll be adding a python/php/jquery script to enable sending from my smtp service to allow this form to send emails by clicking submit (back to myself for now, but easy to pivot to sending out emails). For the time being, i'll just change the action to mailto which annoying brings up the email client. Later i want to add Keila as an open source alt to MailChimp.</textarea>
                         </div>
 
                         <div class="large-12 column">
                             <input type="submit" value="Send (Doesn't do anything)" class="cta" />
-                            <!--value="Send Message"-->
+                            <!-value="Send Message"--
                         </div>
                     </form>
+                -->
                 </div>
             </div>
             <!-- End of Form -->
