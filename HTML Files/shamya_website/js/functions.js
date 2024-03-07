@@ -44,11 +44,11 @@ class ChatApp {
 
     callOpenai(model, messages, temperature, max_tokens) {
         $.ajax({
-            url: 'https://api.openai.com/v1/chat/completions',
+            url: 'https://gpt.shamya.net/v1/chat/completions',
             type: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Bearer ${APIKEY}` //need to replace this with maybe a py script calling it??? I'll make a python proxy to handle api requests it seems.
+                'Authorization': `sk-cfw****` //need to replace this with maybe a py script calling it??? I'll make a python proxy to handle api requests it seems.
             },
             data: JSON.stringify({
                 model: model,
