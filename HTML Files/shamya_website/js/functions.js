@@ -47,8 +47,8 @@ class ChatApp {
             url: 'https://gpt.shamya.net/v1/chat/completions',
             type: 'POST',
             headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `sk-cfw****` //need to replace this with maybe a py script calling it??? I'll make a python proxy to handle api requests it seems.
+                'Content-Type': 'application/json'//,
+               // 'Authorization': `sk-cfw****` //need to replace this with maybe a py script calling it??? I'll make a python proxy to handle api requests it seems.
             },
             data: JSON.stringify({
                 model: model,
