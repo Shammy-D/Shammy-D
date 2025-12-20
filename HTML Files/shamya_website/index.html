@@ -219,25 +219,38 @@ with virtualisation, monitoring/observability, network design, and automation (a
                 <article>
                     <div class="smallTitle">
                         <!-- This section has basically become a blog post lol (it's my own site so i can make it as messy as i please (i wouldn't actually write anything in prod comments unless they're my own site, in which case i'd signature it)). Yes i talk a lot.  -->
-                        <h2>What i'm currently working on</h2>
+                        <h2>My Websites and Current Projects</h2>
                         <span>...</span>
                     </div>
                     <p>
-                        I'd like to say my network topology is coming along nicely, but many would find my use of a
-                        virtual router uneasy, though it's been working perfectly for over a year now with
-                        over <a href="https://www.speedtest.net/result/15907143557"> 900mbps down</a> and 3 ping!
-                        </br></br>
-                        I setup this website via an Nginx server that i'm running on my second Proxmox cluster, with
-                        my SSL certs being handled by ACME certs and proxied by HAProxy via my pfsense vm to Cloudflare,
-                        so
-                        my network isn't exposed to the internet (as long as Cloudflare is still operational ahah).
-                        I also recently setup my own email service, so I can receive emails to the @shamya.net domain,
-                        so feel free to
-                        email <a href="mailto:contact@shamya.net">contact@shamya.net</a> if you want to help test out my
-                        email capacity!
-                        My next project will likely be setting up TrueNas (I need a good NAS) or Nextcloud as a private
-                        cloud storage alternative.
-                        Feel free to recommend any projects that I might find interesting, i'm always down to explore!
+                       <!-- I'd like to say my network topology is coming along nicely, but many would find my use of pfSense within a VM to be troublesome. -->
+                       <!--  </br></br> -->
+                        
+
+
+
+
+
+
+
+      
+
+      <a href="https://test.shamya.net" target="_blank" rel="noopener"> test.shamya.net</a>
+      <br><a href="https://grafana.shamya.net" target="_blank" rel="noopener"> grafana.shamya.net</a>
+      <br><a href="https://status.shamya.net" target="_blank" rel="noopener"> status.shamya.net</a> <br>
+<br> <strong> Current Project: Grafana & Prometheus Monitoring/Observability Stack</strong><br>
+      Self-hosted Grafana behind a Cloudflare Tunnel, with Prometheus restricted to LAN access and exporters running across Proxmox, Windows and core services.
+<a href="https://grafana.shamya.net" target="_blank" rel="noopener">
+        Grafana Dashboard
+      </a>
+      <br>
+      <br><a href="https://test.shamya.net" target="_blank" rel="noopener"> This current site</a> is hosted on NGINX, with ACME and HAProxy/Cloudflare handling the certs and proxy respectively. 
+                                               
+        <br>
+        <br>
+      
+                        Check out my Github in the <a href="#contact" class="scroll">Contact section</a> down the bottom or <a href="mailto:contact@shamya.net">email me</a> at contact@shamya.net if you'd like. See some test Grafana embeds down there too!
+
 
 
 
@@ -252,8 +265,11 @@ with virtualisation, monitoring/observability, network design, and automation (a
                     Above is my Network Topology, some info is obfuscated for opsec, even though subnet info and vlan info wouldn't actually threaten my network if they got leaked for obvious reasons. My network topology is evergrowing as i love to dive into random projects that develop my own skills/help me out in any way. 
                 -->
                     </p>
+                    
                 </article>
             </div>
+            
+            
 
         </div>
     </section>
@@ -545,6 +561,9 @@ with virtualisation, monitoring/observability, network design, and automation (a
                     <h1>CONTACT</h1>
                     <span>...</span>
                     <p>I'd really love to hear from you so why not send me an email at contact@shamya.net & i'll get back to you as soon as I can.</p>
+                <br>
+                <br>
+                    <p> I'm just expermenting below with some embedded Grafana metric panels, I first need to setup a holistic dashboard, with proper labels etc. Don't worry about it being exposed, it's reversed proxied and the user is anonymous with no editing ability. Everything is a test environment as well. </p>
                 </div>
             </div>
             <!-- Probs don't need the below map div, but could be useful in the future so i'll leave it commented.
@@ -621,6 +640,7 @@ with virtualisation, monitoring/observability, network design, and automation (a
 
             <!-- End of Form -->
              <iframe src="https://grafana.shamya.net/d-solo/proxnode2/proxmox-node-2?orgId=1&from=1765848496875&to=1765934896875&timezone=browser&var-ds_prometheus=af6xzdo375ybkd&var-job=node&var-nodename=Fuji2-ubu-prom-graf-01&var-node=localhost:9100&refresh=1m&panelId=panel-77&__feature.dashboardSceneSolo=true" width="450" height="200" frameborder="0"></iframe>
+<iframe src="https://grafana.shamya.net/d-solo/proxnode2/proxmox-node-2?orgId=1&from=1766121473363&to=1766207873363&timezone=browser&var-ds_prometheus=af6xzdo375ybkd&var-job=proxmox-node&var-nodename=prox&var-node=192.168.0.25:9100&refresh=1m&panelId=panel-78&__feature.dashboardSceneSolo=true" width="450" height="200" frameborder="0"></iframe>
 
             <div class="large-4 large-uncentered medium-10 medium-centered column">
                 <div class="smallTitle">
