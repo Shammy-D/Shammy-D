@@ -256,7 +256,7 @@ I'm basically trying to automate my whole deployment on Proxmox Node 3, making T
 <br>
 - Secure access: Cloudflare Tunnel + Zero Trust, Prometheus kept LAN-only
 <br>
-- Automation: GitHub Actions runner for CI/CD into the lab
+- Automation: GitHub Actions runner + ArgoCD for CI/CD into the lab
 <br>
 
 <br>
@@ -264,7 +264,7 @@ I'm basically trying to automate my whole deployment on Proxmox Node 3, making T
 
                         Check out my Github in the <a href="#contact" class="scroll">Contact section</a> down the bottom
                         or <a href="mailto:contact@shamya.net">email me</a> at contact@shamya.net if you'd like. See
-                        some test Grafana embeds down there too!
+                        some test Grafana embeds down there too! Next project: TrueNAS Scale.
                     </p>
                 </article>
             </div>
@@ -277,117 +277,87 @@ I'm basically trying to automate my whole deployment on Proxmox Node 3, making T
        <section class="parallax" style="background-image: url(/home/codespace/Shammy-D/HTML Files/soul/images/Shams Topology.png;);" data-type="background" data-speed="9"></section>
         <--End of panoramic -->
 
-    <section class="services" id="services">
-        <div class="row">
+   <section class="services" id="services">
+    <div class="row">
 
-            <div class="large-8 large-centered column">
-                <div class="title">
-                    <h1>Skills</h1>
-                    <span>...</span>
-                    <p>Through many years of tinkering at home and in the workplace, i've
-                        gained a lot of useful knowledge that i'll revere. Here are some of them: </p>
-                </div>
-            </div>
-
-
-
-
-
-            <div class="large-3 medium-6 small-12 column">
-                <article class="service">
-                    <div class="top">
-                        <i class="fa fa-desktop"> </i>
-                        <h3>Operations</h3>
-                    </div>
-                    <p>
-                        • Performing Windows patching via Ivanti and Tanium for different clients</br>
-                        • Strong ServiceNow understanding</br>
-                        • User creation within AD systems and via PowerShell scripts</br>
-                        • Performing up to 10 different morning health checks for various clients</br>
-                        • Point lead in teaching the team new processes/updating KB articles</br>
-                        • Troubleshooting: Assessment, system knowledge, analytical skills, testing & logic</br>
-                    </p>
-                </article>
-            </div>
-
-
-            <div class="large-3 medium-6 small-12 column">
-                <article class="service">
-                    <div class="top">
-                        <i class="fa fa-pencil"> </i>
-                        <h3>Programming and Dev</h3>
-                    </div>
-
-                    <p>
-                        • Troubleshooting issues with PS & Python scripts then fixing them</br>
-                        • Working with Linux distros like Kali, Ubuntu Server, Tails</br>
-                        • Using Clonezilla for backups and restores</br>
-                        • Intermediate HTML, CSS, JavaScript, and Java skills</br>
-                        • Using Wireshark for network troubleshooting</br>
-                        • Experience with Kali tools like burp suite, Wifite, hashcat</br>
-                        • Using VSC & Github integration for version control</br>
-                    </p>
-                </article>
-            </div>
-
-
-
-
-
-            <div class="large-3 medium-6 small-12 column">
-                <article class="service">
-                    <div class="top">
-                        <i class="fa fa-rocket"> </i>
-                        <h3>Service</h3>
-                    </div>
-                    <p>
-                        • I use Docker, Portainer and NGINX to host this site</br>
-                        • I'm running pfSense, pi-hole and 2 Proxmox clusters</br>
-                        • Client POC for user provisioning</br>
-                        • Finding potential issues and remediating them</br>
-                        • Solving client incidents/requests within SLAs</br>
-                        • Scheduling changes/patches for clients</br>
-                        • Resolving CVE's by raising changes</br>
-                        • Working with Citrix & Vmware environments</br>
-
-                        <!-- I need to make these more concise. Too many lines/too long. 
-                        •	Lead communications point of contact for our clients as i know their environments the most out of my team and manager.</br>
-                        •	Making SNOW dashboards to keep track of not only my ageing tickets, but my coworkers.</br>
-                        •	Taking the initive to answering and liasing with upper management questions on issues that i can help with.</br>
-                        •	Bringing up potential issues with licencing, expiring certs before they become an issue. </br>
-                        •	Solving client incidents/requests within SLAs</br>
-                        •	Communicating with clients for patching schedules and changes.</br>
-                        •	Noticing vulnerablities (CVE's) -> raising changes -> patching -> cycled when needed. (For NBN)</br>
-                        -->
-                    </p>
-                    <!-- <p>Truth be told we simply love Wordpress and like to think of ourselves as specialists in the creation of Wordpress driven websites. We firmly believe Wordpress is the best Content Management System around which just means it's easy for you or your clients to manage content.</p> -->
-                </article>
-            </div>
-
-            <div class="large-3 medium-6 small-12 column">
-                <article class="service">
-                    <div class="top">
-                        <i class="fa fa-code"> </i>
-                        <h3>Personal Attributes</h3>
-                    </div>
-                    <p>
-                        • Able to adapt rapidly</br>
-                        • Friendly, outgoing, and enthusiastic</br>
-                        • Excellent Interpersonal skills</br>
-                        • Resourceful problem solving</br>
-                        • Excellent communication skills</br>
-                        • Enjoy working as part of a team</br>
-                        • Great at delegation and taking lead</br>
-                        • Dedicated and hard working</br>
-                    </p>
-                    <!--<p>We are experts at implementing complex internet services using combinations of the latest emerging web techonologies. Namely HTML5, CSS3 and jQuery for mobile and web app designs.</p>
-                       -->
-                </article>
+        <div class="large-8 large-centered column">
+            <div class="title">
+                <h1>Skills</h1>
+                <span>...</span>
+                <p>Here are my key skills that I've learnt through many years of Ops work and tinkering at home:</p>
             </div>
         </div>
-    </section>
 
+        <div class="large-3 medium-6 small-12 column">
+            <article class="service">
+                <div class="top">
+                    <i class="fa fa-cogs"> </i>
+                    <h3>Operations and Service Management</h3>
+                </div>
+                <p>
+                    • Windows patching and endpoint work using Ivanti and Tanium across multiple client environments</br>
+                    • ServiceNow incident and request handling, prioritisation, escalation, and working to SLAs</br>
+                    • Daily health checks, triage, and remediation across a mix of client systems</br>
+                    • Active Directory user and access tasks, including repeatable changes via PowerShell</br>
+                    • Change planning, scheduling, and documentation, including runbooks and KB updates</br>
+                    • CVE remediation through change requests and controlled rollout</br>
+                </p>
+            </article>
+        </div>
 
+        <div class="large-3 medium-6 small-12 column">
+            <article class="service">
+                <div class="top">
+                    <i class="fa fa-sitemap"> </i>
+                    <h3>Platform and Homelab Engineering</h3>
+                </div>
+
+                <p>
+                    • Proxmox virtualisation across multiple nodes, building and iterating on a home lab platform</br>
+                    • pfSense as a virtual router, plus OpenVPN for secure remote access back into the home network</br>
+                    • Pi-hole for DNS and ad-blocking, plus UniFi network setup (controller, switch, U6 Lite AP)</br>
+                    • Docker, Portainer, and NGINX for self-hosting services and reverse proxying</br>
+                    • Windows Server VM workloads, including MSSQL Express for lab apps and testing</br>
+                    • Cloudflare Tunnel for exposing selected services safely</br>
+                </p>
+            </article>
+        </div>
+
+        <div class="large-3 medium-6 small-12 column">
+            <article class="service">
+                <div class="top">
+                    <i class="fa fa-code-fork"> </i>
+                    <h3>Automation, IaC, and Tooling</h3>
+                </div>
+                <p>
+                    • Terraform provisioning Proxmox VMs via API, using cloud-init for repeatable builds</br>
+                    • Ansible bootstrapping K3s and base utilities on new nodes</br>
+                    • Argo CD syncing manifests to deploy and manage cluster apps</br>
+                    • Self-hosted GitHub Actions runner for CI style workflows and automated deployments</br>
+                    • Git and GitHub for version control and change tracking</br>
+                    • PowerShell, Bash, and Python for small automations and fixing broken scripts</br>
+                </p>
+            </article>
+        </div>
+
+        <div class="large-3 medium-6 small-12 column">
+            <article class="service">
+                <div class="top">
+                    <i class="fa fa-heartbeat"> </i>
+                    <h3>Observability and Monitoring</h3>
+                </div>
+                <p>
+                    • Prometheus and Grafana dashboards for hosts, services, and cluster monitoring</br>
+                    • kube-prometheus-stack in K3s, plus Alertmanager for alert handling</br>
+                    • Exporter rollout including node exporter, Windows exporter, Proxmox exporter, SQL exporter, and blackbox checks</br>
+                    • Loki for logs, Tempo for tracing, and OpenTelemetry collector for telemetry plumbing</br>
+                    • Cloudflare Zero Trust access control for exposed services</br>
+                    • Status monitoring via Better Stack for public facing uptime</br>
+                </p>
+            </article>
+        </div>
+    </div>
+</section>
 
     <section class="team" id="team">
         <div class="row">
