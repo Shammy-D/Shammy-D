@@ -205,6 +205,8 @@
 
 
                             </div>
+                            <br>
+                            <br>
                             <h2>About Me </h2>
                             <span>...</span>
 
@@ -237,11 +239,12 @@
                 <article>
                     <div class="smallTitle">
                         <h2>My Websites</h2>
-
+                        <span>...</span>
                     </div>
 
                     <p>
                         <a href="https://shamya.net" target="_blank" rel="noopener">shamya.net</a>
+                        <br><a href="https://ai.shamya.net" target="_blank" rel="noopener">ai.shamya.net</a>
                         <br><a href="https://test.shamya.net" target="_blank" rel="noopener">test.shamya.net</a>
                         <br><a href="https://grafana.shamya.net" target="_blank" rel="noopener">grafana.shamya.net</a>
                         <br><a href="https://grafana-kube.shamya.net" target="_blank"
@@ -251,29 +254,34 @@
 
                     </p>
                     <div class="smallTitle">
-                        <h2>My Projects</h2>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <h2>Current Projects</h2>
                         <span>...</span>
                     </div>
                     <p>
-                        I'm basically trying to automate my whole deployment on Proxmox Node 3, making Terraform create
-                        template Vms for K3s to be installed on, via the Proxmox API. Then Ansible will kick in and
-                        install everything else, I've also added in a bootstrap app in ArgoCD to make all the Yamls
-                        install for whatever pods and services.
+                        I just created my own local AI inference server using Ollama & Open WebUI on Rocky Linux 9 -
+                        hosted on bare-metal. I decided not to complicate things by using a hypervisor or K3s, I just kept it
+                        simple before I upgrade to a Mac Mini for power efficiency reasons, and bigger models.
                         <br>
                         <br>
-                        - Observability: Grafana/Prometheus + exporters, Loki (logs), Tempo + OTel (tracing)
+                        <strong>Front End:</strong> <a href="https://ai.shamya.net" target="_blank"
+                            rel="noopener">ai.shamya.net</a>
                         <br>
-                        - Secure access: Cloudflare Tunnel + Zero Trust, Prometheus kept LAN-only
+                        <strong>Inference:</strong> Llama 3.1 8B + Qwen2.5-Coder 7B
                         <br>
-                        - Automation: GitHub Actions runner + ArgoCD for CI/CD into the lab
+                        <strong>Security:</strong> Cloudflare Zero Trust OTP, SELinux, SSH-key only, no exposed ports
                         <br>
-
+                        <strong>Stack:</strong> Rocky Linux 9 Minimal, Nvidia GTX 1070 (old as), Ollama, Docker,
+                        Cloudflare Tunnel
                         <br>
-
-
+                        <br>
                         Check out my Github in the <a href="#contact" class="scroll">Contact section</a> down the bottom
-                        or <a href="mailto:contact@shamya.net">email me</a> at contact@shamya.net if you'd like. See
-                        some test Grafana embeds down there too! Next project: TrueNAS Scale.
+                        or <a href="mailto:contact@shamya.net">email me</a> at <a
+                            href="mailto:contact@shamya.net">contact@shamya.net</a> if you'd like.
                     </p>
                 </article>
             </div>
@@ -431,8 +439,8 @@
                         <div class="row member">
                             <div
                                 class="large-5 medium-6 small-8 large-uncentered medium-centered small-centered column">
-                                <img src="images/nttsyd.jpg" alt="NTT Company Logo (Says NTT and has a blue ribbon above)"
-                                    title="NTT Logo">
+                                <img src="images/nttsyd.jpg"
+                                    alt="NTT Company Logo (Says NTT and has a blue ribbon above)" title="NTT Logo">
                             </div>
 
                             <div class="small-10 large-7 small-centered large-uncentered column">
