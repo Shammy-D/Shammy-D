@@ -264,7 +264,8 @@
                     </div>
                     <p>
                         I just created my own local AI inference server using Ollama & Open WebUI on Rocky Linux 9 -
-                        hosted on bare-metal. I decided not to complicate things by using a hypervisor or K3s, I just kept it
+                        hosted on bare-metal. I decided not to complicate things by using a hypervisor or K3s, I just
+                        kept it
                         simple before I upgrade to a Mac Mini for power efficiency reasons, and bigger models.
                         <br>
                         <br>
@@ -337,9 +338,11 @@
                         network</br>
                         • Pi-hole for DNS and ad-blocking, plus UniFi network setup (controller, switch, U6 Lite
                         AP)</br>
-                        • Docker, Portainer, and NGINX for self-hosting services and reverse proxying</br>
+                        • Docker, Portainer, NGINX, Ollama, and Open WebUI for self-hosting applications and AI
+                        services</br>
+                        • Bare-metal Rocky Linux AI inference server using NVIDIA GPU acceleration (GTX 1070)</br>
                         • Windows Server VM workloads, including MSSQL Express for lab apps and testing</br>
-                        • Cloudflare Tunnel for exposing selected services safely</br>
+                        • Cloudflare Tunnel and Zero Trust for securely publishing selected services</br>
                     </p>
                 </article>
             </div>
@@ -356,7 +359,7 @@
                         • Argo CD syncing manifests to deploy and manage cluster apps</br>
                         • Self-hosted GitHub Actions runner for CI style workflows and automated deployments</br>
                         • Git and GitHub for version control and change tracking</br>
-                        • PowerShell, Bash, and Python for small automations and fixing broken scripts</br>
+                        • PowerShell, Bash, and Python for automation, scripting, and AI infrastructure management</br>
                     </p>
                 </article>
             </div>
@@ -373,7 +376,7 @@
                         • Exporter rollout including node exporter, Windows exporter, Proxmox exporter, SQL exporter,
                         and blackbox checks</br>
                         • Loki for logs, Tempo for tracing, and OpenTelemetry collector for telemetry plumbing</br>
-                        • Cloudflare Zero Trust access control for exposed services</br>
+                        • Cloudflare Zero Trust, SELinux, and SSH key-only authentication for service hardening</br>
                         • Status monitoring via Better Stack for public facing uptime</br>
                     </p>
                 </article>
